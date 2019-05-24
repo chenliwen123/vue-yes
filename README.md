@@ -1,7 +1,7 @@
 # vue-yes
 vue相关学习与练习
 
-vue-cli  axios 设置请求头
+#vue-cli  axios 设置请求头
 
 Vue.prototype.$axios=axios;
 
