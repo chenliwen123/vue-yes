@@ -12,12 +12,12 @@ import 'swiper/dist/css/swiper.min.css'
 
 Vue.use(Vuex);
 Vue.prototype.$axios=axios;
-Vue.prototype.$Srote=Store;
-Vue.config.productionTip = false;
+Vue.prototype.$Store=Store;//转换成全局属性
+//Vue.config.productionTip = false;
 
 axios.defaults.baseURL = "URL";
 axios.defaults.headers['Content-Type']='Application/x-www-form-urlencoded';
-axios.defaults.withCredentials=true;
+//axios.defaults.withCredentials=true;
 
 
 /* eslint-disable no-new */
@@ -27,5 +27,4 @@ new Vue({
   Store,
   components: { App },
   template: '<App/>',
-  created () {},
 })
