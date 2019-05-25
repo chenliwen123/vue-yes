@@ -15,5 +15,8 @@ Vue.config.productionTip = false;
   调用时不需要写其他东西 this..$axios.post/get(url,data)
 
 ## 1.1 在main.js中设置 Vue.prototype.名称
+正常插件  axios swiper vuex 
+
+在main.js中设置 Vue.prototype.名称
 
 调用时  this.名称
