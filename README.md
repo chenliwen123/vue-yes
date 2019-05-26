@@ -21,7 +21,7 @@ Vue.config.productionTip = false;
 
 调用时  this.名称
 
-
+## 1.2 当前组件生效的css样式
 <style scoped>
   
   
