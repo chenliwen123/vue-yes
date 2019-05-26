@@ -35,3 +35,8 @@ Vue.config.productionTip = false;
   
   
 </style>
+
+## 1.3filter 过滤器
+
+js 函数filter 过滤器  返回值 true  false  可以是函数、可以是数值、booleans值
+
