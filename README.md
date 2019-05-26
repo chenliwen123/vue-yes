@@ -23,8 +23,15 @@ Vue.config.productionTip = false;
 
 
 <style scoped>
-  /* 这个css样式只在当前组件生效 
+  
+  
+  /* 
+ 
+     这个css样式只在当前组件生效 
+  
      scoped  当前组件生效
+     
   */
+  
   
 </style>
