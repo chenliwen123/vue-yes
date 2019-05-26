@@ -21,6 +21,7 @@ Vue.config.productionTip = false;
 
 调用时  this.名称
 
+
 <style scoped>
   /* 这个css样式只在当前组件生效 
      scoped  当前组件生效
