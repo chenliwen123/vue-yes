@@ -12,7 +12,7 @@ import 'swiper/dist/css/swiper.min.css'
 
 Vue.use(Vuex);
 Vue.prototype.$axios=axios;
-Vue.prototype.$Store=Store;//转换成全局属性
+Vue.prototype.$store=Store;//转换成全局属性
 //Vue.config.productionTip = false;
 
 axios.defaults.baseURL = "URL";
