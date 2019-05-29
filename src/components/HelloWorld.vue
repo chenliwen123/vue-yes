@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapMutations } from 'vuex'   //做vuex 映射需要
 import { mapActions } from 'vuex'
 export default {
   name: 'HelloWorld',
@@ -21,19 +21,22 @@ export default {
                  ]),//映射成功了  调用的时候   就直接this.showPeople
     ...mapActions(['incrementAsync']),//映射成功
     hahah(a){
-      this.showPeople(a);
+      this.showPeople(a);// 映射成功后的调用方法
+      //不映射应该 this.$store.commit('showPeople');
+      console.log(this.$store.commit('showPeople',a))
       console.log(this.$store.state.name);
       console.log(this.$store.state.count);
     },
   },
   mounted(){
     // console.log(this);
-    // console.log(this.$Store.state.name);
+    // console.log(this.$store.state.name);
     this.incrementAsync();//映射成功后调用的方法
-    //不映射应该 this.$stoer.dispatch('incrementAsync');
+    //不映射应该 this.$store.dispatch('incrementAsync');
   },
   created () {
     console.log(this.$store);
+    console.log(this.$store.getters.doneTodos);
   },
 }
 
