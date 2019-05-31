@@ -45,3 +45,9 @@ js 函数 find  找到第一个符合的值，之后就不再执行了
 
 
 https://www.cnblogs.com/wuzhendong/p/8078659.html  scss 中需要引入的组件链接
+## 1.4 css 实现图片垂直居中
+1. flex 布局
+2.displa:table-cell;
+  vertical:middle
+3.背景 center center
+4.行高发 高度和行高一样
