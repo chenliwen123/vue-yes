@@ -109,6 +109,80 @@
       <el-link href="##" icon="el-icon-edit" type="success" :underline="false">你好</el-link>
       <el-link href="##">我不是很开心<i class="el-icon-view el-icon--right"></i></el-link>
     </el-row>
+    <br>
+    <el-row>
+      <el-radio v-model="radio" label="1">嘿boy</el-radio>
+      <el-radio v-model="radio" label="2">嗨gry</el-radio>
+    </el-row>
+    <br>
+    <el-row>
+      <el-radio v-model="disabled" label="3" disabled>hello</el-radio>
+      <el-radio v-model="disabled" label="4">Hi</el-radio>
+    </el-row>
+    <br>
+    <el-radio-group v-model="group_radio">
+      <el-radio label="1">你好很高兴和你接触</el-radio>
+      <el-radio label="2">是啊很高兴认识你呢</el-radio>
+      <el-radio label="3">我是蒙塔基的钢蛋</el-radio>
+    </el-radio-group>
+    <br>
+    <br>
+    <el-row>
+      <el-radio-group v-model="button_radio">
+        <el-radio-button label="你嘛时候是天下第一阿"></el-radio-button>
+        <el-radio-button label="就在今天"></el-radio-button>
+        <el-radio-button label="你们一起上吧"></el-radio-button>
+      </el-radio-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-radio-group v-model="button_radio_sizi" size="medium">
+        <el-radio-button label="你嘛时候是天下第一呀"></el-radio-button>
+        <el-radio-button label="就在今天"></el-radio-button>
+        <el-radio-button label="我是钢铁侠"></el-radio-button>
+      </el-radio-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-radio-group v-model="button_radio_small" size="small">
+        <el-radio-button label="疯子？"></el-radio-button>
+        <el-radio-button label="天才？" disabled></el-radio-button>
+        <el-radio-button label="还是？"></el-radio-button>
+      </el-radio-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-radio-group v-model="quandisa" size="mini" disabled>
+        <el-radio-button label="豆沙"></el-radio-button>
+        <el-radio-button label="五仁"></el-radio-button>
+        <el-radio-button label="白面"></el-radio-button>
+        <el-radio-button label="什锦"></el-radio-button>
+      </el-radio-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-radio v-model="shide" border label="1">你好你好</el-radio>
+      <el-radio v-model="shide" border label="2">额不太好</el-radio>
+    </el-row>
+    <br>
+    <el-row>
+      <el-checkbox-group v-model="bian1">
+        <el-checkbox label="多1">确定</el-checkbox>
+        <el-checkbox label="多2">再次</el-checkbox>
+        <el-checkbox label="多3" disabled>确定</el-checkbox>
+      </el-checkbox-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-checkbox :indeterminate="isIndeterminate">全选</el-checkbox>
+      <br>
+      <el-checkbox-group v-model="">
+        <el-checkbox>深圳</el-checkbox>
+        <el-checkbox>北京</el-checkbox>
+        <el-checkbox>上海</el-checkbox>
+        <el-checkbox>广州</el-checkbox>
+      </el-checkbox-group>
+    </el-row>
   </div>
 </template>
 <script>
@@ -116,7 +190,16 @@ export default {
   name:'uibutton',
   data(){
     return{
-
+      radio:"1",
+      disabled:"3",
+      group_radio:"1",
+      button_radio:"你嘛时候是天下第一阿",
+      button_radio_sizi:"我是钢铁侠",
+      button_radio_small:"天才？",
+      quandisa:"白面",
+      shide:"1",
+      bian1:["多1","多3"],
+      qxdd:[]
     }
   }
 }
