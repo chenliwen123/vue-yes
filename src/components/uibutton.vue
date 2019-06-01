@@ -79,6 +79,36 @@
               disabled 是否禁止
               round  是否圆角
     -->
+    <br>
+    <el-row>
+      <el-button-group>
+        <el-link href="##">你好你好</el-link>
+        <el-link href="##" type="success">你好你好</el-link>
+        <el-link href="##" type="info">你好你好</el-link>
+        <el-link href="##" type="primary">你好你好</el-link>
+        <el-link href="##" type="warning">你好你好</el-link>
+        <el-link href="##" type="danger">你好你好</el-link>
+      </el-button-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-link href="##" disabled>你好</el-link>
+      <el-link href="##" type="info" disabled>你好</el-link>
+      <el-link href="##" type="primary" disabled>你好</el-link>
+      <el-link href="##" type="success" disabled>你好</el-link>
+    </el-row>
+    <br>
+    <el-row>
+      <el-link href="##" :underline="false">你好</el-link>
+      <el-link href="##" :underline="false" type="success">你好</el-link>
+      <el-link href="##" :underline="false" type="primary">你好</el-link>
+      <el-link href="##" :underline="false" type="wanger">你好</el-link>
+    </el-row>
+    <br>
+    <el-row>
+      <el-link href="##" icon="el-icon-edit" type="success" :underline="false">你好</el-link>
+      <el-link href="##">我不是很开心<i class="el-icon-view el-icon--right"></i></el-link>
+    </el-row>
   </div>
 </template>
 <script>
