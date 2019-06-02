@@ -9,14 +9,22 @@ const store=new Vuex.Store({
     todos:[
       {id:1,text:"...",done:true},
       {id:2,text:"...",done:true},
-    ]
+    ],
+    zbfs:{},
+    src:"https://staticlive.douyucdn.cn/common/share/play.swf?room_id=12306"
   },//存放数据的地方 只能在mutations中的函数里修改state的数据
   mutations:{
     showPeople:function (state,msg) {
       state.name=msg;
     },
+    zbqh:function(state,data){
+      state.zbfs=data;
+    },
     increment:function(){
       store.state.count++;
+    },
+    huidiao(state,name){
+      state.src=state.zbfs.find(zbf=>zbf.name==name).url
     }
   },//修改state的方法 调用时要store.commit('showPeople');   这里储存的方法都是同步不支持异步
   actions:{
@@ -35,7 +43,7 @@ const store=new Vuex.Store({
     },
     doneTodoid:(state)=>(id)=>{
       return state.todos.find(todo=>todo.id===id);
-    }
-  },//读取state 状态  store.dispatch
+    },
+  },
 });
 export default  store

@@ -4,7 +4,6 @@ import Vue from 'vue'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import $ from 'jquery'
 import axios from 'axios'
 import Swiper from 'swiper'
 import Vuex from 'vuex'
@@ -79,7 +78,8 @@ import {
   Loading,
   MessageBox,
   Message,
-  Notification
+  Notification,
+  link
 } from 'element-ui';
 
 Vue.use(Pagination);
@@ -145,6 +145,7 @@ Vue.use(Header);
 Vue.use(Aside);
 Vue.use(Main);
 Vue.use(Footer);
+Vue.use(link);
 
 Vue.use(Loading.directive);
 
@@ -162,10 +163,10 @@ Vue.prototype.$axios=axios;
 Vue.prototype.$store=Store;//转换成全局属性
 Vue.config.productionTip = false;
 
-axios.defaults.baseURL = "URL";
+//axios.defaults.baseURL = "URL";
 axios.defaults.headers['Content-Type']='Application/x-www-form-urlencoded';
 //axios 设置提交 类型 post 提交
-axios.defaults.withCredentials=true;
+//axios.defaults.withCredentials=true;
 
 /* eslint-disable no-new */
 new Vue({
