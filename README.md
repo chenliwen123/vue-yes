@@ -51,3 +51,6 @@ https://www.cnblogs.com/wuzhendong/p/8078659.html  scss 中需要引入的组件
   vertical:middle<br>
 3.背景 center center<br>
 4.行高发 高度和行高一样<br>
+## 1.5 axios 跨域提交问题
+
+后台允许跨域的 地址 不可以写*   必须写域名带端口
