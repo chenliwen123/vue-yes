@@ -176,11 +176,11 @@
     <el-row>
       <el-checkbox :indeterminate="isIndeterminate">全选</el-checkbox>
       <br>
-      <el-checkbox-group v-model="">
-        <el-checkbox>深圳</el-checkbox>
-        <el-checkbox>北京</el-checkbox>
-        <el-checkbox>上海</el-checkbox>
-        <el-checkbox>广州</el-checkbox>
+      <el-checkbox-group v-model="qxdd">
+        <el-checkbox label="深圳">深圳</el-checkbox>
+        <el-checkbox label="北京">北京</el-checkbox>
+        <el-checkbox label="上海">上海</el-checkbox>
+        <el-checkbox label="广州">广州</el-checkbox>
       </el-checkbox-group>
     </el-row>
   </div>
@@ -199,7 +199,7 @@ export default {
       quandisa:"白面",
       shide:"1",
       bian1:["多1","多3"],
-      qxdd:[]
+      qxdd:["深圳"]
     }
   }
 }
