@@ -174,13 +174,10 @@
     </el-row>
     <br>
     <el-row>
-      <el-checkbox :indeterminate="isIndeterminate">全选</el-checkbox>
+      <el-checkbox :indeterminate="isIndeterminate" v-model="isall" @change="allcheck()">全选</el-checkbox>
       <br>
-      <el-checkbox-group v-model="qxdd">
-        <el-checkbox label="深圳">深圳</el-checkbox>
-        <el-checkbox label="北京">北京</el-checkbox>
-        <el-checkbox label="上海">上海</el-checkbox>
-        <el-checkbox label="广州">广州</el-checkbox>
+      <el-checkbox-group v-model="qxdd" @change="handleCheckedCitiesChange()">
+        <el-checkbox v-for="item in checknu" :label="item" :key="item">{{item}}</el-checkbox>
       </el-checkbox-group>
     </el-row>
   </div>
@@ -199,9 +196,23 @@ export default {
       quandisa:"白面",
       shide:"1",
       bian1:["多1","多3"],
-      qxdd:["深圳"]
+      checknu:['深圳','北京','上海','广州'],
+      qxdd:['深圳'],
+      isIndeterminate:true,
+      isall:false,
     }
-  }
+  },
+  methods:{
+    allcheck:function(){
+      this.qxdd=this.isall ? this.checknu:[];
+      this.isIndeterminate=false;
+    },
+    handleCheckedCitiesChange(value) {
+      var checknu=this.checknu.length;
+      this.isall=checknu==this.qxdd.length ? true : false;
+      this.isIndeterminate=this.qxdd.length>0 && checknu>this.qxdd.length
+    }
+  },
 }
 </script>
 <style scoped type="scss">
