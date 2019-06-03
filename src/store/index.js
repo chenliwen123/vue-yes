@@ -11,7 +11,7 @@ const store=new Vuex.Store({
       {id:2,text:"...",done:true},
     ],
     zbfs:{},
-    src:"https://staticlive.douyucdn.cn/common/share/play.swf?room_id=12306"
+    src:"##"
   },//存放数据的地方 只能在mutations中的函数里修改state的数据
   mutations:{
     showPeople:function (state,msg) {

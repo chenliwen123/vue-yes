@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <zbvideo></zbvideo>
+    <ui_input></ui_input>
   </div>
 </template>
 
@@ -10,9 +10,10 @@ import uilianxi from './components/uilianxi'
 import uibuju from './components/uibuju'
 import uibutton from './components/uibutton'
 import zbvideo from './components/zbvideo'
+import ui_input from './components/ui_input'
 export default {
   name: 'App',
-  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo},
+  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input},
   template:{
 
   },
