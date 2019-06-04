@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ui_jisu></ui_jisu>
+    <ui_select></ui_select>
   </div>
 </template>
 
@@ -11,10 +11,11 @@ import uibuju from './components/uibuju'
 import uibutton from './components/uibutton'
 import zbvideo from './components/zbvideo'
 import ui_input from './components/ui_input'
+import ui_select from './components/ui_select'
 import ui_jisu from './components/ui_jisu'
 export default {
   name: 'App',
-  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu},
+  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select},
   template:{
 
   },
