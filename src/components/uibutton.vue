@@ -180,6 +180,29 @@
         <el-checkbox v-for="item in checknu" :label="item" :key="item">{{item}}</el-checkbox>
       </el-checkbox-group>
     </el-row>
+    <br>
+    <el-row>
+      <el-checkbox-group v-model="qxdd" :max="2">
+        <el-checkbox label="北京">北京</el-checkbox>
+        <el-checkbox label="天津">天津</el-checkbox>
+        <el-checkbox label="上海">上海</el-checkbox>
+        <el-checkbox label="深圳">深圳</el-checkbox>
+        <el-checkbox label="广州">广州</el-checkbox>
+      </el-checkbox-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-checkbox-group v-model="qxdd">
+        <el-checkbox-button label="北京">北京</el-checkbox-button>
+        <el-checkbox-button label="天津">天津</el-checkbox-button>
+        <el-checkbox-button label="上海">上海</el-checkbox-button>
+        <el-checkbox-button label="广州">广州</el-checkbox-button>
+      </el-checkbox-group>
+    </el-row>
+    <br>
+    <el-row>
+      <el-checkbox border label="你好你好">你好你好</el-checkbox>
+    </el-row>
   </div>
 </template>
 <script>
