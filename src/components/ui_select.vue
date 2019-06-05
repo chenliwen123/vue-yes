@@ -25,9 +25,40 @@
       </el-row>
       <br>
       <el-row>
-        
+        <el-select v-model="msg" multiple>
+          <el-option v-for="item in options" :key="item.label" :value="item.label" :label="item.label">{{item.label}}</el-option>
+        </el-select>
+      </el-row>
+      <br>
+      <el-row>
+        <el-select v-model="msg" multiple collapse-tags>
+          <el-option v-for="item in options" :label="item.label" :value="item.label" :key="item.value">{{item.label}}</el-option>
+        </el-select>
+      </el-row>
+      <br>
+      <el-row>
+        <el-select v-model="msg" filterable>
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.label">{{item.label}}</el-option>
+        </el-select>
+      </el-row>
+      <br>
+      <el-row>
+        <el-select v-model="msg" filterable multiple collapse-tags allow-create default-first-option>
+          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.label">{{item.label}}</el-option>
+        </el-select>
       </el-row>
     </div>
+  <!--
+      el-select          select标签
+      el-option          option选项标签  需要有:key :value :label 三个属性
+      disabled           禁用属性
+      clearabel          清空属性
+      multiple           多选
+      filterabel         select 标签输入
+      collapse-tags      多选时变成数字
+      allow-create       添加 选项
+      default-first-option 添加的位置再option 最后
+  -->
 </template>
 
 <script>
