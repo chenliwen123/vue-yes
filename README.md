@@ -58,3 +58,4 @@ https://www.cnblogs.com/wuzhendong/p/8078659.html  scss 中需要引入的组件
 ## 1.6.1  直播方式优化
 待工作<br>
 提示窗优化、下拉选项、颜色优化
+斗鱼提供了 api 可以尝试下 前后台分离
