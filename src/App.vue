@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ui_select></ui_select>
+    <UItable></UItable>
   </div>
 </template>
 
@@ -13,9 +13,16 @@ import zbvideo from './components/zbvideo'
 import ui_input from './components/ui_input'
 import ui_select from './components/ui_select'
 import ui_jisu from './components/ui_jisu'
+import uiswitch from './components/uiswitch'
+import uislider from './components/uislider'
+import uirate from './components/uirate'
+import uicolorpicker from './components/uicolorpicker'
+import uifrom from './components/uifrom'
+import formyz from './components/formyz'
+import UItable from './components/UItable'
 export default {
   name: 'App',
-  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select},
+  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable},
   template:{
 
   },
