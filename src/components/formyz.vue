@@ -47,6 +47,9 @@
           <el-button type="primary" @click="submitForm(ruleForm)">确定</el-button>
           <el-button plain>重置</el-button>
         </el-form-item>
+        <el-form-item label="请输入QQ号" prop="number">
+          <el-input v-model.number="ruleForm.number" placeholder="来一个QQ 号吧"></el-input>
+        </el-form-item>
       </el-form>
     </div>
   <!--
@@ -75,8 +78,9 @@ export default {
         date2:'',
         delivery:'',
         type:[],
-        resource:'',
+        resource:'线上品牌赞助',
         desc:'',
+        number:'',
       },
       rules:{
         name:[
@@ -101,6 +105,10 @@ export default {
         desc:[
           {required:true,message:"必须填写活动形式",trigger:"blur"}
         ],
+        number:[
+          {required:true,message:"请输入QQ号",trigger:'blur'},
+          {type:"number",message:"输入数字"}
+        ]
       }
     }
   },
