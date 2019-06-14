@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <message></message>
+    <notify></notify>
   </div>
 </template>
 
@@ -23,9 +23,11 @@ import UItable from './components/UItable'
 import uitag from './components/uitag'
 import badge from './components/badge'
 import message from './components/message'
+import messagetc from './components/messagetc'
+import notify from './components/notify'
 export default {
   name: 'App',
-  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable,uitag,badge,message},
+  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable,uitag,badge,message,messagetc,notify},
   template:{
 
   },
