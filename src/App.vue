@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <UItable></UItable>
+    <message></message>
   </div>
 </template>
 
@@ -20,9 +20,12 @@ import uicolorpicker from './components/uicolorpicker'
 import uifrom from './components/uifrom'
 import formyz from './components/formyz'
 import UItable from './components/UItable'
+import uitag from './components/uitag'
+import badge from './components/badge'
+import message from './components/message'
 export default {
   name: 'App',
-  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable},
+  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable,uitag,badge,message},
   template:{
 
   },
