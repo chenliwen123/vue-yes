@@ -79,7 +79,7 @@ import {
   MessageBox,
   Message,
   Notification,
-  link
+  link,
 } from 'element-ui';
 
 Vue.use(Pagination);

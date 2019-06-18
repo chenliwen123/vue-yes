@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <notify></notify>
+    <stesp></stesp>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
-import uilianxi from './components/uilianxi'
 import uibuju from './components/uibuju'
 import uibutton from './components/uibutton'
 import zbvideo from './components/zbvideo'
@@ -25,9 +24,13 @@ import badge from './components/badge'
 import message from './components/message'
 import messagetc from './components/messagetc'
 import notify from './components/notify'
+import navmenu from './components/navmenu'
+import uitab from './components/uitab'
+import dropdown from './components/dropdown'
+import stesp from './components/stesp'
 export default {
   name: 'App',
-  components: { HelloWorld,uilianxi,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable,uitag,badge,message,messagetc,notify},
+  components: { HelloWorld,uibuju,uibutton,zbvideo,ui_input,ui_jisu,ui_select,uiswitch,uislider,uirate,uicolorpicker,uifrom,formyz,UItable,uitag,badge,message,messagetc,notify,navmenu,uitab,dropdown,stesp},
   template:{
 
   },
