@@ -60,4 +60,4 @@ https://www.cnblogs.com/wuzhendong/p/8078659.html  scss 中需要引入的组件
 提示窗优化、下拉选项、颜色优化<br>
 斗鱼提供了 api 可以尝试下 前后台分离
 ## 1.7.1  vue 路由问题<br>
-   路由渲染页面是"<router-view></router-view>"
+   路由渲染页面是router-view标签渲染
